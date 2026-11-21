@@ -195,6 +195,11 @@ dialog p { padding-top: 9px; font-size: 14px; }
 }
 .recommendation-scores dd { font-size: clamp(23px,3.4vw,40px); font-variant-numeric: lining-nums tabular-nums; }
 .recommendation-scores > div:last-child dd { font-weight: 700; }
+@media (max-width: 380px) {
+  .grades.recommendation-scores { grid-template-columns: minmax(0,1fr) minmax(0,.86fr) minmax(0,1.12fr); gap: 4px; }
+  .recommendation-scores dt { font-size: 11px; }
+  .recommendation-scores dd { font-size: 20px; }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0s !important; }
