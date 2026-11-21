@@ -47,13 +47,44 @@
           <div class="body-copy"><p class="role">个人开发 · Python / PyAutoGUI</p><h3>4200A-SCS 光响应自动测试系统</h3><p>我把两套仪器软件的操作写成可保存的组表。程序联动 Clarius 和 NKT CONTROL，逐组设置偏压与光源，核对 Run 编号后导出 XLS 和 CSV。</p><p>v19 在未接器件、激光主发射关闭时完成八组空载联调，含复位用时 16 分 30 秒。两种文件格式中的 525 个原始数值逐项一致。</p></div>
         </article>
         <div class="project-pair">
-          <article>
-            <figure class="paired-pics care-photos"><a class="zoom" href="ws63e-hub.jpg" data-caption="智慧养老系统的家庭主机，集中处理雷达、终端状态和告警。"><img src="ws63e-hub.jpg" loading="lazy" alt="智慧养老系统家庭主机原型"></a><a class="zoom" href="ws63e-nodes.jpg" data-caption="两台编号边缘终端在本地完成动作判断。"><img src="ws63e-nodes.jpg" loading="lazy" alt="编号为 1 和 2 的边缘跌倒检测终端"></a></figure>
+          <article id="ws63e">
+            <div class="paired-pics care-photos">
+              <figure>
+                <a class="zoom" href="ws63e-hub-enclosed.png" data-caption="家庭主机成品 · 白色 3D 打印外壳封装，45° 实拍。"><img src="ws63e-hub-enclosed.png" width="654" height="873" loading="lazy" alt="白色 L 形家庭主机，顶部伸出天线，底座开窗露出电路模块"></a>
+                <figcaption>家庭主机 · 3D 打印外壳成品</figcaption>
+              </figure>
+              <figure>
+                <a class="zoom" href="ws63e-nodes.jpg" data-caption="编号 1 和 2 的两台佩戴终端在本地判断动作，并向家庭主机上报。"><img src="ws63e-nodes.jpg" loading="lazy" alt="并排放置的两台佩戴终端，外壳上分别标有 1 和 2"></a>
+                <figcaption>佩戴终端 · 编号 1 和 2</figcaption>
+              </figure>
+            </div>
             <p class="role">三人团队队长 · 2025 全国总决赛二等奖</p><h3>WS63E 星闪智慧养老系统</h3><p>我负责主机与边缘终端软件，采集站立、步行和跌倒等样本，联合角速度与姿态角调试六轴 IMU 判别。终端通过 Wi-Fi UDP 上报，主机汇聚事件，经 L610 4G 模块发送远程告警。</p>
             <div class="project-links">
               <a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#ws63e">系统与测试 <span aria-hidden="true">↗</span></a>
               <a class="line-link" href="reports/ws63e-eldercare-design-report.pdf" download="国赛完整设计报告_林泽洲.pdf">下载国赛完整设计报告（公开版 PDF，60 页）<span aria-hidden="true">↓</span></a>
             </div>
+            <details class="care-gallery">
+              <summary>主机电路实拍与佩戴端 3D 模型</summary>
+              <div class="care-gallery-grid">
+                <figure>
+                  <a class="zoom" href="ws63e-hub-circuit-top.png" data-caption="家庭主机电路俯视，可见各模块在板上的位置和接线。"><img src="ws63e-hub-circuit-top.png" loading="lazy" alt="俯视家庭主机控制板、扩展板及连接线"></a>
+                  <figcaption>主机电路 · 俯视</figcaption>
+                </figure>
+                <figure>
+                  <a class="zoom" href="ws63e-hub-circuit-side.png" data-caption="家庭主机电路侧面，可见接插件、天线模块与板间连接。"><img src="ws63e-hub-circuit-side.png" loading="lazy" alt="从侧面观察主机控制板、接插件与天线模块"></a>
+                  <figcaption>主机电路 · 侧视</figcaption>
+                </figure>
+                <figure>
+                  <a class="zoom" href="ws63e-wearable-interior.png" data-caption="佩戴端外壳的 3D 设计，拆开盖板后可见内部布局。"><img src="ws63e-wearable-interior.png" loading="lazy" alt="敞开的佩戴端外壳 CAD 模型，展示内部空间"></a>
+                  <figcaption>佩戴端模型 · 内部布局</figcaption>
+                </figure>
+                <figure>
+                  <a class="zoom" href="ws63e-wearable-clip.png" data-caption="佩戴端外壳的 3D 设计，背面配置了弧形背夹。"><img src="ws63e-wearable-clip.png" loading="lazy" alt="佩戴端外壳 CAD 模型背面，带蓝色背夹"></a>
+                  <figcaption>佩戴端模型 · 背夹外观</figcaption>
+                </figure>
+              </div>
+              <a class="line-link zoom care-bench" href="ws63e-hub-bench.jpg" data-caption="初版答辩用主机的接线测试。控制板与天线固定在开放式立架上。">查看初版主机接线测试照 <span aria-hidden="true">↗</span></a>
+            </details>
           </article>
           <article>
             <figure class="paired-pics car-photos"><a class="zoom" href="tdps-rover.jpg" data-caption="TDPS 整车侧视，展示传感器、控制板和轮组。"><img src="tdps-rover.jpg" loading="lazy" alt="双 STM32 小车与车载传感器侧面实拍"></a><a class="zoom" href="tdps-top.jpg" data-caption="小车俯视图，可见双板分工、传感器与接线。"><img src="tdps-top.jpg" loading="lazy" alt="双 STM32 小车的控制板和线路俯视图"></a></figure>

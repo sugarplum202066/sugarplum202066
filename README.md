@@ -16,7 +16,7 @@
 | --- | --- |
 | [WS₂/MoS₂ 计算光谱仪](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#spectrometer) | 参与异质结转移、对准和器件表征，搭建可调波长测试光路。从 198 条实测 I–t 曲线中提取 508 个完整光脉冲，比较偏压、栅压与波长对光电流的影响。 |
 | [4200A-SCS 光响应自动测试系统](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#automation) | 独立开发 Python 工作台，联动 Keithley Clarius 与 NKT CONTROL。现场空载联调完成 8 组，含复位用时 16 分 30 秒，8 对 XLS/CSV 的 525 个原始数值逐项一致。 |
-| [WS63E 智慧养老监测系统](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#ws63e)<br>[下载国赛设计报告（PDF）](https://github.com/sugarplum202066/sugarplum202066/raw/refs/heads/main/reports/ws63e-eldercare-design-report.pdf) | 担任三人团队队长，负责六轴 IMU 跌倒判别及主机、边缘端软件，通过 Wi-Fi UDP 上报告警。作品获 2025 年全国大学生嵌入式芯片与系统设计竞赛芯片应用赛道**全国总决赛二等奖**。 |
+| [WS63E 智慧养老监测系统](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#ws63e)<br>[成品实拍与 3D 模型](https://sugarplum202066.github.io/sugarplum202066/#ws63e) · [下载国赛设计报告（PDF）](https://github.com/sugarplum202066/sugarplum202066/raw/refs/heads/main/reports/ws63e-eldercare-design-report.pdf) | 担任三人团队队长，负责六轴 IMU 跌倒判别及主机、边缘端软件，通过 Wi-Fi UDP 上报告警。作品获 2025 年全国大学生嵌入式芯片与系统设计竞赛芯片应用赛道**全国总决赛二等奖**。 |
 | [TDPS 双 STM32 循迹避障小车](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#tdps)<br>[下载 TDPS 最终报告（PDF）](https://github.com/sugarplum202066/sugarplum202066/raw/refs/heads/main/reports/tdps-group28-final-report.pdf) | 在五人团队中主导八路灰度循迹与差速 PID 调试，解决直角转弯、连续半圆后的重新捕线问题，参与整车避障联调。 |
 
 **实验与开发工具**　二维材料干法转移、AFM 与拉曼表征、Keithley 4200 系列、Python、MATLAB、C、Linux、STM32、WS63E。
