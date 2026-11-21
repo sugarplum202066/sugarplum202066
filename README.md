@@ -2,9 +2,11 @@
 
 **[图文作品集 ↗](https://sugarplum202066.github.io/sugarplum202066/)**　·　[科研与工程](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md)　·　[教育与荣誉](https://github.com/sugarplum202066/sugarplum202066/blob/main/academic.md)　·　[赛道相册](https://github.com/sugarplum202066/sugarplum202066/blob/main/motorsport.md)
 
-我叫林泽洲，在电子科技大学格拉斯哥学院读微电子科学与工程。本科毕设里，我用激光照射 WS₂/MoS₂ 异质结，测量单个器件在不同偏压下产生的电流，研究能否从中辨别入射光的波长。为了让每条电流曲线都能追溯到当时的实验条件，我也为实验室写了一套仪器控制软件。
+你好，我是林泽洲，来自广东东莞，现在在电子科技大学格拉斯哥学院读微电子科学与工程。我的本科毕设是做一台基于 WS₂/MoS₂ 异质结的计算光谱仪。我想弄清楚，同一个器件在不同偏压和栅压下的光电响应，能不能用来还原入射光谱。实验中要反复改参数、测量和导出数据，手动做一轮很耗时间，我就写了个 Python 工具，把这些步骤串了起来。
 
-我已接受电子科技大学基础与前沿研究院**电子科学与技术专业硕士推免待录取通知**，预计 2027 年入学。本科前六学期 GPA **3.8/4.0**，大三学年学业排名 **10/160**，推免综合排名 **14/161**。
+我也喜欢做嵌入式项目。2025 年，我和两位队友做了一套基于 WS63E 的居家跌倒监测系统。我担任队长，主要负责跌倒判别和主机与边缘端的通信。这个作品拿到了**全国大学生嵌入式芯片与系统设计竞赛芯片应用赛道全国总决赛二等奖**。后来做 TDPS 小车时，我主要负责双 STM32 小车的循迹控制和调试。
+
+我已接受电子科技大学基础与前沿研究院电子科学与技术专业的硕士推免待录取通知，预计 2027 年入学。本科前六学期 GPA 为 **3.8/4.0**，大三学年学业排名 **10/160**，推免综合排名 **14/161**。
 
 ## 科研与工程
 
@@ -14,8 +16,8 @@
 | --- | --- |
 | [WS₂/MoS₂ 计算光谱仪](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#spectrometer) | 参与异质结转移、对准和器件表征，搭建可调波长测试光路。从 198 条实测 I–t 曲线中提取 508 个完整光脉冲，比较偏压、栅压与波长对光电流的影响。 |
 | [4200A-SCS 光响应自动测试系统](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#automation) | 独立开发 Python 工作台，联动 Keithley Clarius 与 NKT CONTROL。现场空载联调完成 8 组，含复位用时 16 分 30 秒，8 对 XLS/CSV 的 525 个原始数值逐项一致。 |
-| [WS63E 智慧养老监测系统](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#ws63e) | 担任三人团队队长，负责六轴 IMU 跌倒判别及主机、边缘端软件，通过 Wi-Fi UDP 上报告警。作品获 2025 年全国大学生嵌入式芯片与系统设计竞赛芯片应用赛道**全国总决赛二等奖**。 |
-| [TDPS 双 STM32 循迹避障小车](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#tdps) | 在五人团队中主导八路灰度循迹与差速 PID 调试，解决直角转弯、连续半圆后的重新捕线问题，参与整车避障联调。 |
+| [WS63E 智慧养老监测系统](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#ws63e)<br>[下载国赛设计报告（PDF）](https://github.com/sugarplum202066/sugarplum202066/raw/refs/heads/main/reports/ws63e-eldercare-design-report.pdf) | 担任三人团队队长，负责六轴 IMU 跌倒判别及主机、边缘端软件，通过 Wi-Fi UDP 上报告警。作品获 2025 年全国大学生嵌入式芯片与系统设计竞赛芯片应用赛道**全国总决赛二等奖**。 |
+| [TDPS 双 STM32 循迹避障小车](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#tdps)<br>[下载 TDPS 最终报告（PDF）](https://github.com/sugarplum202066/sugarplum202066/raw/refs/heads/main/reports/tdps-group28-final-report.pdf) | 在五人团队中主导八路灰度循迹与差速 PID 调试，解决直角转弯、连续半圆后的重新捕线问题，参与整车避障联调。 |
 
 **实验与开发工具**　二维材料干法转移、AFM 与拉曼表征、Keithley 4200 系列、Python、MATLAB、C、Linux、STM32、WS63E。
 

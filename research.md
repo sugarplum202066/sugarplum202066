@@ -45,6 +45,8 @@
 
 **三人团队队长 · 2025 年 1–8 月 · 全国总决赛二等奖**
 
+[下载国赛完整设计报告（公开版 PDF，60 页）](https://github.com/sugarplum202066/sugarplum202066/raw/refs/heads/main/reports/ws63e-eldercare-design-report.pdf)
+
 面向居家场景，我们做了一套从穿戴终端到远程告警的原型。我负责跌倒判别和 WS63E 主机、边缘终端代码。先采集站立、步行、坐起、平躺与跌倒等动作，再结合 LSM6DSL 六轴 IMU 的角速度和姿态角调试触发条件。
 
 | 家庭主机 | 边缘终端 |
@@ -60,6 +62,8 @@
 ## 双 STM32 自主循迹避障小车
 
 **TDPS 课程设计 · 第 28 组 EmbedGo · 五人团队 · 2026 年**
+
+[下载 TDPS 最终报告（PDF，11 页）](https://github.com/sugarplum202066/sugarplum202066/raw/refs/heads/main/reports/tdps-group28-final-report.pdf)
 
 我主导循迹控制与差速 PID 调试。主控 STM32F103RCT6 读取八路灰度、编码器与 IMU，通过左右轮速差修正路径。进入直角或连续半圆后，还要判断何时结束转向、重新捕获轨迹。副控 STM32F103C8T6 配合超声、RTC 和 LoRa 完成检查点触发与计时发送。
 

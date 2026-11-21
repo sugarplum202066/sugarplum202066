@@ -22,7 +22,11 @@
       <div class="hero-copy">
         <h1>林泽洲<span lang="en">Zezhou Lin</span></h1>
         <i aria-hidden="true" class="accent-rule"></i>
-        <p class="hero-bio">我在电子科技大学学习微电子科学与工程，研究二维半导体器件的光电响应，也为实验室开发自动测试软件。离开实验台，我喜欢卡丁车、模拟赛车和赛场摄影。</p>
+        <div class="hero-bio">
+          <p>你好，我是林泽洲，来自广东东莞，现在在电子科技大学格拉斯哥学院读微电子科学与工程。我的本科毕设是做一台基于 WS₂/MoS₂ 异质结的计算光谱仪。我想弄清楚，同一个器件在不同偏压和栅压下的光电响应，能不能用来还原入射光谱。实验中要反复改参数、测量和导出数据，手动做一轮很耗时间，我就写了个 Python 工具，把这些步骤串了起来。</p>
+          <p>我也喜欢做嵌入式项目。2025 年，我和两位队友做了一套基于 WS63E 的居家跌倒监测系统。我担任队长，主要负责跌倒判别和主机与边缘端的通信。这个作品拿到了<strong>全国大学生嵌入式芯片与系统设计竞赛芯片应用赛道全国总决赛二等奖</strong>。后来做 TDPS 小车时，我主要负责双 STM32 小车的循迹控制和调试。</p>
+          <p>我已接受电子科技大学基础与前沿研究院电子科学与技术专业的硕士推免待录取通知，预计 2027 年入学。本科前六学期 GPA 为 <strong>3.8/4.0</strong>，大三学年学业排名 <strong>10/160</strong>，推免综合排名 <strong>14/161</strong>。</p>
+        </div>
         <a class="line-link" href="#research">阅读我的作品 <span aria-hidden="true">↓</span></a>
       </div>
       <figure class="cover-figure">
@@ -45,11 +49,19 @@
         <div class="project-pair">
           <article>
             <figure class="paired-pics care-photos"><a class="zoom" href="ws63e-hub.jpg" data-caption="智慧养老系统的家庭主机，集中处理雷达、终端状态和告警。"><img src="ws63e-hub.jpg" loading="lazy" alt="智慧养老系统家庭主机原型"></a><a class="zoom" href="ws63e-nodes.jpg" data-caption="两台编号边缘终端在本地完成动作判断。"><img src="ws63e-nodes.jpg" loading="lazy" alt="编号为 1 和 2 的边缘跌倒检测终端"></a></figure>
-            <p class="role">三人团队队长 · 2025 全国总决赛二等奖</p><h3>WS63E 星闪智慧养老系统</h3><p>我负责主机与边缘终端软件，采集站立、步行和跌倒等样本，联合角速度与姿态角调试六轴 IMU 判别。终端通过 Wi-Fi UDP 上报，主机汇聚事件，经 L610 4G 模块发送远程告警。</p><a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#ws63e">系统与测试 <span aria-hidden="true">↗</span></a>
+            <p class="role">三人团队队长 · 2025 全国总决赛二等奖</p><h3>WS63E 星闪智慧养老系统</h3><p>我负责主机与边缘终端软件，采集站立、步行和跌倒等样本，联合角速度与姿态角调试六轴 IMU 判别。终端通过 Wi-Fi UDP 上报，主机汇聚事件，经 L610 4G 模块发送远程告警。</p>
+            <div class="project-links">
+              <a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#ws63e">系统与测试 <span aria-hidden="true">↗</span></a>
+              <a class="line-link" href="reports/ws63e-eldercare-design-report.pdf" download="国赛完整设计报告_林泽洲.pdf">下载国赛完整设计报告（公开版 PDF，60 页）<span aria-hidden="true">↓</span></a>
+            </div>
           </article>
           <article>
             <figure class="paired-pics car-photos"><a class="zoom" href="tdps-rover.jpg" data-caption="TDPS 整车侧视，展示传感器、控制板和轮组。"><img src="tdps-rover.jpg" loading="lazy" alt="双 STM32 小车与车载传感器侧面实拍"></a><a class="zoom" href="tdps-top.jpg" data-caption="小车俯视图，可见双板分工、传感器与接线。"><img src="tdps-top.jpg" loading="lazy" alt="双 STM32 小车的控制板和线路俯视图"></a></figure>
-            <p class="role">五人课程设计 · TDPS 第 28 组 · 2026</p><h3>双 STM32 循迹避障小车</h3><p>我主导八路灰度循迹、差速 PID 与出弯重捕线调试，并参与 60 GHz 雷达避障模式联调。最终演示约五分钟走完全程，期间三次人工修正，暴露了场地反光对十字识别与重捕线的影响。</p><a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#tdps">控制与实测 <span aria-hidden="true">↗</span></a>
+            <p class="role">五人课程设计 · TDPS 第 28 组 · 2026</p><h3>双 STM32 循迹避障小车</h3><p>我主导八路灰度循迹、差速 PID 与出弯重捕线调试，并参与 60 GHz 雷达避障模式联调。最终演示约五分钟走完全程，期间三次人工修正，暴露了场地反光对十字识别与重捕线的影响。</p>
+            <div class="project-links">
+              <a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#tdps">控制与实测 <span aria-hidden="true">↗</span></a>
+              <a class="line-link" href="reports/tdps-group28-final-report.pdf" download="TDPS 最终报告_林泽洲.pdf">下载 TDPS 最终报告（PDF，11 页）<span aria-hidden="true">↓</span></a>
+            </div>
           </article>
         </div>
       </div>

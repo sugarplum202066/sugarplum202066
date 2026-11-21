@@ -33,11 +33,12 @@ nav a, .github { font-size: 14px; font-weight: 600; }
 nav a:hover, .github:hover, footer a:hover { color: var(--blue); }
 .github { margin-left: auto; white-space: nowrap; }
 .github span { margin-left: 3px; }
-.hero { display: grid; align-items: center; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: clamp(36px,6vw,108px); padding-block: clamp(45px,6.3vw,106px) clamp(46px,5.3vw,86px); }
+.hero { display: grid; align-items: center; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); gap: clamp(36px,6vw,108px); padding-block: clamp(45px,6.3vw,106px) clamp(46px,5.3vw,86px); }
 h1 { font-size: clamp(66px,7.5vw,123px); letter-spacing: -.05em; font-weight: 700; line-height: 1.13; }
 h1 span { display: block; margin-top: 7px; font: normal clamp(38px,4.2vw,70px)/1 Georgia, serif; letter-spacing: -.047em; }
 .accent-rule { display: block; width: 43px; height: 5px; background: #dce51e; margin-block: clamp(22px,2.2vw,37px) 17px; }
-.hero-bio { max-width: 29em; font-size: clamp(16px,1.22vw,20px); line-height: 1.95; }
+.hero-bio { max-width: 36em; font-size: clamp(16px,1.22vw,20px); line-height: 1.95; }
+.hero-bio p + p { margin-top: .85em; }
 .line-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; width: fit-content; border-bottom: 1px solid currentColor; font-weight: 650; font-size: 14px; line-height: 1.6; padding-block: 3px; }
 .line-link span { transition: transform .16s ease; }
 .line-link:hover span { transform: translate(2px,-1px); }
@@ -76,7 +77,7 @@ h3 { font-size: clamp(23px,2.1vw,36px); line-height: 1.46; letter-spacing: -.025
 .paired-pics img { width: 100%; height: 100%; object-fit: cover; }
 .care-photos a:first-child img { object-fit: contain; background: #c7c6c1; }
 .project-pair h3 + p { margin-top: 9px; }
-.project-pair .line-link { margin-top: 16px; }
+.project-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; margin-top: 16px; }
 .academic-layout { display: grid; grid-template-columns: minmax(0,.43fr) minmax(0,1fr); align-items: start; gap: clamp(28px,5.3vw,94px); padding-top: clamp(30px,3vw,54px); }
 .portrait img { width: 100%; aspect-ratio: 1 / 1.06; object-fit: cover; }
 .degree { color: var(--muted); margin-top: 6px; }
