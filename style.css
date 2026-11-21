@@ -1,0 +1,192 @@
+:root {
+  color-scheme: light;
+  --paper: #f6f3eb;
+  --white: #fffefa;
+  --ink: #121d2a;
+  --muted: #525b61;
+  --line: #c9cbc5;
+  --blue: #253ba1;
+  --lime: #e5ed46;
+  --navy: #101a29;
+  --serif: "STIX Two Text", Georgia, "Noto Serif CJK SC", "Songti SC", SimSun, "Microsoft YaHei", serif;
+  --sans: "Inter", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.83 var(--sans); }
+body:has(dialog[open]) { overflow: hidden; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 3px solid #2986ff; outline-offset: 4px; }
+img { display: block; max-width: 100%; }
+figure, h1, h2, h3, p, dl, dd { margin: 0; }
+h1, h2, h3 { font-family: var(--serif); text-wrap: balance; }
+figure a { display: block; }
+.wrap { width: min(1392px, calc(100% - clamp(38px, 9.3vw, 160px))); margin-inline: auto; }
+.skip { position: fixed; transform: translateY(-120%); left: 14px; top: 4px; padding: 7px 16px; z-index: 5; color: white; background: var(--ink); }
+.skip:focus { transform: none; }
+.masthead { display: flex; align-items: center; gap: clamp(28px, 4.4vw, 85px); min-height: 82px; border-bottom: 1px solid var(--ink); }
+.brand { display: flex; align-items: center; gap: 17px; white-space: nowrap; }
+.brand span { font: 700 38px/.95 Georgia, serif; letter-spacing: -.09em; }
+.brand b { padding-left: 16px; border-left: 1px solid var(--line); font-size: 14px; font-weight: 600; letter-spacing: .1em; }
+nav { display: flex; gap: clamp(19px, 3vw, 54px); }
+nav a, .github { font-size: 14px; font-weight: 600; }
+nav a:hover, .github:hover, footer a:hover { color: var(--blue); }
+.github { margin-left: auto; white-space: nowrap; }
+.github span { margin-left: 3px; }
+.hero { display: grid; align-items: center; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: clamp(36px,6vw,108px); padding-block: clamp(45px,6.3vw,106px) clamp(46px,5.3vw,86px); }
+h1 { font-size: clamp(66px,7.5vw,123px); letter-spacing: -.05em; font-weight: 700; line-height: 1.13; }
+h1 span { display: block; margin-top: 7px; font: normal clamp(38px,4.2vw,70px)/1 Georgia, serif; letter-spacing: -.047em; }
+.accent-rule { display: block; width: 43px; height: 5px; background: #dce51e; margin-block: clamp(22px,2.2vw,37px) 17px; }
+.hero-bio { max-width: 29em; font-size: clamp(16px,1.22vw,20px); line-height: 1.95; }
+.line-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; width: fit-content; border-bottom: 1px solid currentColor; font-weight: 650; font-size: 14px; line-height: 1.6; padding-block: 3px; }
+.line-link span { transition: transform .16s ease; }
+.line-link:hover span { transform: translate(2px,-1px); }
+.hero .line-link { margin-top: 21px; }
+.cover-figure img { width: 100%; height: auto; aspect-ratio: 1.52; object-fit: cover; object-position: 50% 49%; }
+figcaption { color: var(--muted); font-size: 12px; line-height: 1.55; padding-top: 9px; }
+.cover-figure figcaption { display: flex; gap: 11px; align-items: baseline; margin-top: 4px; }
+.cover-figure figcaption::before { content: ""; width: 3px; height: 12px; align-self: center; background: #b1ba15; }
+.cover-figure strong { font-size: 13px; color: var(--ink); }
+.zoom { cursor: zoom-in; }
+.section-pad { padding-block: clamp(49px,6vw,100px); }
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: 12px; padding-bottom: clamp(22px,2.25vw,38px); border-bottom: 1px solid var(--ink); }
+.section-en { font: italic clamp(16px,1.3vw,22px)/1.4 Georgia, serif; color: var(--blue); margin-bottom: 5px; }
+h2 { font-size: clamp(35px,3.6vw,64px); line-height: 1.2; letter-spacing: -.04em; }
+h3 { font-size: clamp(23px,2.1vw,36px); line-height: 1.46; letter-spacing: -.025em; }
+.role { color: var(--blue); font-weight: 650; font-size: 13px; letter-spacing: .035em; line-height: 1.7; margin-bottom: 9px; }
+.research { background: var(--white); }
+.feature { display: grid; grid-template-columns: .86fr 1.14fr; gap: clamp(35px,7vw,112px); padding-block: clamp(32px,4.9vw,80px); }
+.feature h3, .race-story h3 { font-size: clamp(32px,3.4vw,57px); line-height: 1.36; }
+.formula { margin-top: 15px; font: italic clamp(24px,2vw,35px)/1.3 Georgia, serif; color: var(--blue); }
+.body-copy > p + p { margin-top: 12px; }
+.body-copy > h3 + p { margin-top: 13px; }
+.data-pair { display: flex; margin-top: 21px; }
+.data-pair > div { padding-right: 32px; }
+.data-pair > div + div { padding-left: 32px; border-left: 1px solid var(--line); }
+.data-pair dt, .grades dt { font-size: 13px; color: var(--muted); }
+.data-pair dd, .grades dd { font: 400 clamp(34px,3.3vw,55px)/1.22 Georgia, serif; color: var(--blue); }
+.data-pair small, .grades small { font: 500 15px/1.5 var(--sans); }
+.instrument { display: grid; grid-template-columns: 1.04fr .96fr; gap: clamp(30px,5vw,84px); align-items: center; border-block: 1px solid var(--line); padding-block: clamp(28px,3.8vw,67px); }
+.instrument figure a { padding: clamp(8px,1.55vw,25px); background: #e9edf0; }
+.instrument img { width: 100%; height: auto; border: 1px solid #aeb5b8; }
+.project-pair, .race-awards { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(25px,4vw,72px); margin-top: clamp(30px,4vw,70px); }
+.project-pair .paired-pics { display: grid; grid-template-columns: .85fr 1.15fr; gap: 5px; margin-bottom: 22px; }
+.project-pair .car-photos { grid-template-columns: 1.2fr .8fr; }
+.paired-pics a { height: clamp(195px,20vw,315px); overflow: hidden; background: #e2e2dd; }
+.paired-pics img { width: 100%; height: 100%; object-fit: cover; }
+.care-photos a:first-child img { object-fit: contain; background: #c7c6c1; }
+.project-pair h3 + p { margin-top: 9px; }
+.project-pair .line-link { margin-top: 16px; }
+.academic-layout { display: grid; grid-template-columns: minmax(0,.43fr) minmax(0,1fr); align-items: start; gap: clamp(28px,5.3vw,94px); padding-top: clamp(30px,3vw,54px); }
+.portrait img { width: 100%; aspect-ratio: 1 / 1.06; object-fit: cover; }
+.degree { color: var(--muted); margin-top: 6px; }
+.grades { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin-block: 25px; }
+.grades dd { white-space: nowrap; font-size: clamp(28px,2.6vw,43px); }
+.records > div { display: grid; grid-template-columns: 6.3em 1fr; gap: 15px; padding-block: 13px; border-top: 1px solid var(--line); }
+.records dt { font-size: 14px; padding-top: 2px; font-weight: 650; }
+.records dd { font-size: 15px; }
+.motorsport { background: var(--navy); color: #f6f3ea; }
+.motorsport .section-head { border-color: #c2c5ca; }
+.motorsport .section-en, .motorsport .role { color: var(--lime); }
+.motorsport figure figcaption { color: #c4cbd1; }
+.race-feature { display: grid; grid-template-columns: .83fr 1.55fr .66fr; align-items: start; gap: clamp(15px,2vw,35px); margin-top: clamp(28px,3.7vw,62px); }
+.race-story p:not(.role) { margin-top: 14px; color: #d2d8de; }
+.race-feature img { width: 100%; height: clamp(238px,24.5vw,380px); object-fit: cover; }
+.race-feature figure:nth-of-type(1) img { object-position: 50% 50%; }
+.race-feature figure:nth-of-type(2) img { object-position: 51% 62%; }
+.race-awards,.telemetry { padding-top: clamp(29px,3.4vw,55px); border-top: 1px solid #52606b; }
+.race-awards h3 + p { margin-block: 10px 19px; color: #d2d8de; }
+.race-duo, .race-trio { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(8px,1vw,16px); }
+.race-duo img, .sim-photo img { width: 100%; height: clamp(200px,19.8vw,325px); object-fit: cover; }
+.race-duo figure:first-child img { object-position: 50% 58%; }
+.race-duo figure:last-child img { object-position: 50% 51%; }
+.sim-photo img { object-fit: contain; background: #06090e; }
+.race-awards .line-link { margin-top: 13px; }
+.telemetry { margin-top: clamp(33px,4vw,70px); display: grid; grid-template-columns: .76fr 1.62fr; gap: clamp(25px,4vw,75px); }
+.race-trio { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.race-trio img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+footer { min-height: 91px; display: flex; align-items: center; gap: 25px; }
+footer > span { margin-right: auto; font: 600 21px/1.35 var(--serif); }
+footer i { margin-left: 9px; font: italic 17px Georgia,serif; }
+footer a { font-size: 13px; font-weight: 600; }
+dialog { margin: auto; border: 0; padding: 15px; background: #131b27; color: white; max-width: min(94vw,1350px); max-height: 94vh; }
+dialog::backdrop { background: rgb(4 9 16 / 85%); }
+dialog .close { display: block; margin-left: auto; margin-bottom: 11px; padding: 6px 12px; border: 1px solid #75818d; color: #fff; background: transparent; font: 14px var(--sans); cursor: pointer; }
+dialog .close span { margin-left: 5px; }
+dialog img { max-width: 100%; max-height: 74vh; width: auto; height: auto; object-fit: contain; margin: auto; }
+dialog p { padding-top: 9px; font-size: 14px; }
+@media (max-width: 850px) {
+  .masthead { min-height: 67px; gap: 23px; }
+  .brand { gap: 10px; }
+  .brand b { padding-left: 10px; font-size: 12px; }
+  nav { gap: 19px; }
+  .hero { grid-template-columns: 1fr 1fr; gap: 26px; }
+  .hero h1 { font-size: clamp(56px,8.3vw,80px); }
+  .hero h1 span { font-size: 37px; }
+  .cover-figure img { aspect-ratio: 1.04; }
+  .feature, .instrument { gap: 26px; }
+  .feature { grid-template-columns: .77fr 1.23fr; }
+  .instrument { grid-template-columns: .94fr 1.06fr; }
+  .academic-layout { grid-template-columns: .44fr 1fr; gap: 24px; }
+  .grades { grid-template-columns: repeat(2,1fr); row-gap: 15px; }
+  .race-feature { grid-template-columns: 1.8fr 1fr; }
+  .race-feature .race-story { grid-column: 1/-1; }
+  .desktop-break { display: none; }
+  .race-feature img { height: 260px; }
+}
+@media (max-width: 620px) {
+  body { font-size: 15px; }
+  .wrap { width: calc(100% - 38px); }
+  .masthead { flex-wrap: wrap; gap: 0; padding-top: 15px; }
+  .brand span { font-size: 29px; }
+  .masthead nav { order: 3; flex-basis: 100%; gap: 24px; padding-block: 10px 9px; }
+  nav a, .github { font-size: 13px; }
+  .hero { display: flex; flex-direction: column; align-items: stretch; gap: 26px; padding-block: 33px 28px; }
+  .hero h1 { font-size: 61px; }
+  .hero h1 span { font-size: 35px; }
+  .accent-rule { height: 4px; width: 33px; margin: 18px 0 12px; }
+  .hero .line-link { margin-top: 11px; }
+  .hero-bio { font-size: 15px; line-height: 1.88; }
+  .cover-figure img { aspect-ratio: 1.65; }
+  .section-pad { padding-block: 34px; }
+  .section-head { padding-bottom: 19px; }
+  .section-en { font-size: 16px; }
+  h2 { font-size: 34px; }
+  .section-head .line-link { font-size: 12px; gap: 6px; }
+  h3 { font-size: 24px; }
+  .feature, .instrument, .project-pair, .race-awards, .telemetry { grid-template-columns: 1fr; gap: 24px; }
+  .feature { gap: 14px; padding-block: 25px; }
+  .feature h3 br { display: none; }
+  .feature h3, .race-story h3 { font-size: 29px; }
+  .formula { font-size: 23px; margin-top: 5px; }
+  .data-pair { margin-top: 18px; }
+  .instrument { padding-block: 25px; gap: 17px; }
+  .project-pair { row-gap: 32px; }
+  .project-pair .paired-pics { margin-bottom: 15px; }
+  .paired-pics a { height: clamp(152px,47vw,260px); }
+  .academic-layout { display: block; padding-top: 22px; }
+  .portrait { width: clamp(78px,23vw,120px); float: right; margin: 0 0 14px 16px; }
+  .portrait figcaption { display: none; }
+  .academic-main h3 { font-size: 21px; }
+  .degree { font-size: 14px; }
+  .grades { clear: both; padding-top: 13px; margin: 0 0 21px; }
+  .grades dd { font-size: 33px; }
+  .grades dt { font-size: 12px; }
+  .records > div { grid-template-columns: 1fr; gap: 3px; }
+  .race-feature { grid-template-columns: minmax(0,1.6fr) minmax(0,1fr); gap: 9px; }
+  .race-feature .race-story { margin-bottom: 8px; }
+  .race-feature img { height: clamp(135px,37vw,211px); }
+  .race-awards { gap: 32px; }
+  .race-duo img, .sim-photo img { height: auto; aspect-ratio: 1 / 1.13; }
+  .sim-photo img { aspect-ratio: 16/9; }
+  .telemetry .race-story h3 br { display: none; }
+  .race-trio { gap: 6px; }
+  .race-trio figcaption { font-size: 11px; }
+  footer { min-height: 78px; gap: 15px; }
+  footer > span { font-size: 17px; }
+  footer i { display: block; margin-left: 0; font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0s !important; }
+}

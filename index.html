@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="description" content="林泽洲的个人作品集。电子科技大学微电子科学与工程本科生，记录二维半导体光电测量、嵌入式系统开发与赛车经历。">
+  <title>林泽洲 Zezhou Lin · 科研与工程作品集</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body id="top">
+  <a href="#main" class="skip">跳到正文</a>
+  <header class="wrap masthead">
+    <a class="brand" href="#top" aria-label="林泽洲，返回首页"><span lang="en">ZL</span><b>林泽洲作品集</b></a>
+    <nav aria-label="主导航"><a href="#research">科研与工程</a><a href="#academic">教育与荣誉</a><a href="#motorsport">赛道相册</a></nav>
+    <a class="github" lang="en" href="https://github.com/sugarplum202066">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <h1>林泽洲<span lang="en">Zezhou Lin</span></h1>
+        <i aria-hidden="true" class="accent-rule"></i>
+        <p class="hero-bio">我在电子科技大学学习微电子科学与工程，研究二维半导体器件的光电响应，也为实验室开发自动测试软件。离开实验台，我喜欢卡丁车、模拟赛车和赛场摄影。</p>
+        <a class="line-link" href="#research">阅读我的作品 <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="cover-figure">
+        <a class="zoom" href="heterostructure.jpg" data-caption="WS₂/MoS₂ 异质结与电极。显微镜下的干法转移与对准记录。"><img src="heterostructure.jpg" width="1178" height="1350" alt="显微镜下的蓝色器件与金色电极，绿框标记对准区域" fetchpriority="high"></a>
+        <figcaption><strong>WS₂/MoS₂</strong><span>异质结器件 · 显微对准实拍</span></figcaption>
+      </figure>
+    </div>
+
+    <section class="research section-pad" id="research" aria-labelledby="research-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="section-en" lang="en">Research &amp; engineering</p><h2 id="research-title">科研与工程</h2></div><a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md">项目详录 <span aria-hidden="true">↗</span></a></div>
+        <article class="feature">
+          <div><p class="role">本科毕业设计 · 2026 年 4 月起</p><h3>用一只异质结器件<br>分辨不同波长的光</h3><p class="formula" lang="en">WS₂ / MoS₂</p></div>
+          <div class="body-copy"><p>能否通过改变栅压和源漏偏压，让同一只器件对不同波长给出可以区分的电流响应？我参与了二维材料干法转移、对准和封装，搭建可调波长测试光路，用 Keithley 4200 测量器件的电学与光电特性。</p><p>在 500–900 nm 的偏压扫描中，相邻波长对应的曲线形状很接近。为比较栅压条件引入了多少独立信息，我从三组实测电流–时间曲线中提取光脉冲，修正暗电流基线，分别得到 11 × 7、11 × 6 和 11 × 5 的响应矩阵。</p><dl class="data-pair"><div><dt>实测 I–t 曲线</dt><dd>198 <small>条</small></dd></div><div><dt>完整光脉冲</dt><dd>508 <small>个</small></dd></div></dl></div>
+        </article>
+        <article class="instrument">
+          <figure><a class="zoom" href="measurement-console.png" data-caption="个人开发的 Clarius 与 NKT CONTROL 批量测量工作台，v20 八组待机界面。"><img src="measurement-console.png" width="1152" height="482" loading="lazy" alt="4200A-SCS 自动测试工作台列出八组待执行的波长、功率和偏压参数"></a><figcaption>自研软件界面 · 八组待机组表</figcaption></figure>
+          <div class="body-copy"><p class="role">个人开发 · Python / PyAutoGUI</p><h3>4200A-SCS 光响应自动测试系统</h3><p>我把两套仪器软件的操作写成可保存的组表。程序联动 Clarius 和 NKT CONTROL，逐组设置偏压与光源，核对 Run 编号后导出 XLS 和 CSV。</p><p>v19 在未接器件、激光主发射关闭时完成八组空载联调，含复位用时 16 分 30 秒。两种文件格式中的 525 个原始数值逐项一致。</p></div>
+        </article>
+        <div class="project-pair">
+          <article>
+            <figure class="paired-pics care-photos"><a class="zoom" href="ws63e-hub.jpg" data-caption="智慧养老系统的家庭主机，集中处理雷达、终端状态和告警。"><img src="ws63e-hub.jpg" loading="lazy" alt="智慧养老系统家庭主机原型"></a><a class="zoom" href="ws63e-nodes.jpg" data-caption="两台编号边缘终端在本地完成动作判断。"><img src="ws63e-nodes.jpg" loading="lazy" alt="编号为 1 和 2 的边缘跌倒检测终端"></a></figure>
+            <p class="role">三人团队队长 · 2025 全国总决赛二等奖</p><h3>WS63E 星闪智慧养老系统</h3><p>我负责主机与边缘终端软件，采集站立、步行和跌倒等样本，联合角速度与姿态角调试六轴 IMU 判别。终端通过 Wi-Fi UDP 上报，主机汇聚事件，经 L610 4G 模块发送远程告警。</p><a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#ws63e">系统与测试 <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <figure class="paired-pics car-photos"><a class="zoom" href="tdps-rover.jpg" data-caption="TDPS 整车侧视，展示传感器、控制板和轮组。"><img src="tdps-rover.jpg" loading="lazy" alt="双 STM32 小车与车载传感器侧面实拍"></a><a class="zoom" href="tdps-top.jpg" data-caption="小车俯视图，可见双板分工、传感器与接线。"><img src="tdps-top.jpg" loading="lazy" alt="双 STM32 小车的控制板和线路俯视图"></a></figure>
+            <p class="role">五人课程设计 · TDPS 第 28 组 · 2026</p><h3>双 STM32 循迹避障小车</h3><p>我主导八路灰度循迹、差速 PID 与出弯重捕线调试，并参与 60 GHz 雷达避障模式联调。最终演示约五分钟走完全程，期间三次人工修正，暴露了场地反光对十字识别与重捕线的影响。</p><a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#tdps">控制与实测 <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="academic section-pad" id="academic" aria-labelledby="academic-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="section-en" lang="en">Education &amp; honours</p><h2 id="academic-title">教育与荣誉</h2></div><a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/academic.md">完整履历 <span aria-hidden="true">↗</span></a></div>
+        <div class="academic-layout">
+          <figure class="portrait"><a class="zoom" href="portrait.webp" data-caption="林泽洲 · 电子科技大学格拉斯哥学院"><img src="portrait.webp" loading="lazy" alt="林泽洲的正面肖像"></a><figcaption>林泽洲 / Zezhou Lin</figcaption></figure>
+          <div class="academic-main"><h3>电子科技大学格拉斯哥学院</h3><p class="degree">微电子科学与工程本科 · 2023–2027（预计）</p>
+            <dl class="grades"><div><dt>前六学期 GPA</dt><dd>3.8<small> / 4.0</small></dd></div><div><dt>加权平均分</dt><dd>87.1<small> / 100</small></dd></div><div><dt>大三学业排名</dt><dd>10<small> / 160</small></dd></div><div><dt>推免综合排名</dt><dd>14<small> / 161</small></dd></div></dl>
+            <dl class="records"><div><dt>硕士推免</dt><dd>2026 年 9 月 24 日接受电子科技大学基础与前沿研究院电子科学与技术专业全日制硕士待录取通知，拟于 2027 年入学。</dd></div><div><dt>竞赛与奖学金</dt><dd>第八届全国大学生嵌入式芯片与系统设计竞赛芯片应用赛道全国总决赛二等奖。2024–2025、2025–2026 连续两学年获学院学业奖学金二等奖、校级优秀学生奖学金二等奖。</dd></div><div><dt>课程与语言</dt><dd>集成电路设计、电子器件均为 99 分，半导体物理、微纳工艺均为 97 分。大学英语六级 557 分，学术类雅思 6.0。</dd></div></dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="motorsport section-pad" id="motorsport" aria-labelledby="motorsport-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="section-en" lang="en">Motorsport</p><h2 id="motorsport-title">赛道相册</h2></div><a class="line-link" href="https://github.com/sugarplum202066/sugarplum202066/blob/main/motorsport.md">相册图录 <span aria-hidden="true">↗</span></a></div>
+        <article class="race-feature">
+          <div class="race-story"><p class="role">天府国际赛车节</p><h3>P 房与<br class="desktop-break">发车格</h3><p>在 P 房前留下合影，再走到发车区。12 号领克赛车停在格内，工作人员正围在前轮旁做发车前的准备。</p></div>
+          <figure><a class="zoom" href="tianfu-garage.webp" data-caption="天府国际赛车节 · P 房合影"><img src="tianfu-garage.webp" loading="lazy" alt="天府国际赛车节 P 房内外的合影与两辆赛车"></a><figcaption>P 房合影</figcaption></figure>
+          <figure><a class="zoom" href="tianfu-grid.webp" data-caption="天府国际赛车节 · 发车格上的 12 号赛车"><img src="tianfu-grid.webp" loading="lazy" alt="12 号领克赛车在发车格准备"></a><figcaption>发车区摄影</figcaption></figure>
+        </article>
+        <div class="race-awards">
+          <article><p class="role">270 cc 卡丁车 · 团队赛</p><h3>四小时耐力赛</h3><p>2025 跨年夜 4H 卡丁车耐力赛，我和队友获得精英组季军。</p><div class="race-duo"><figure><a class="zoom" href="endurance-trophy.webp" data-caption="270 cc 四小时耐力赛 · 精英组季军奖杯"><img src="endurance-trophy.webp" loading="lazy" alt="刻有精英组季军字样的奖杯"></a><figcaption>精英组季军奖杯</figcaption></figure><figure><a class="zoom" href="endurance-podium.webp" data-caption="2025 跨年夜 4H 卡丁车耐力赛 · 车队颁奖合影"><img src="endurance-podium.webp" loading="lazy" alt="车队在颁奖台上举起季军颁奖牌"></a><figcaption>车队领奖</figcaption></figure></div></article>
+          <article><p class="role">电子科技大学第一届模拟赛车比赛</p><h3>手柄组第一 · 全场第三</h3><p>我以 Sugarplum 参赛，驾驶 17 号赛车。驾驶舱视角左侧的计时榜记录了当时的位置。</p><figure class="sim-photo"><a class="zoom" href="sim-cockpit.webp" data-caption="17 号赛车的驾驶舱，计时榜上显示 B. Sugarplum。"><img src="sim-cockpit.webp" loading="lazy" alt="模拟赛车驾驶舱和左侧的比赛计时榜"></a><figcaption>比赛驾驶舱视角</figcaption></figure><a class="line-link zoom" href="sim-result.png" data-caption="电子科技大学赛车协会赛果公告 · 林泽洲获全场第三、手柄组第一。">查看协会赛果节选 <span aria-hidden="true">↗</span></a></article>
+        </div>
+        <article class="telemetry"><div class="race-story"><p class="role">二冲竞技卡丁车 · 923 号车</p><h3>第九圈，<br><span lang="en">52.95</span> 秒</h3><p>车载仪表记录了这次练习的最快圈。下一圈是 53.44 秒，两圈相差 0.49 秒。本次最高速度为 97 km/h。</p></div>
+        <div class="race-trio"><figure><a class="zoom" href="two-stroke-kart.webp" data-caption="923 号二冲竞技卡丁车"><img src="two-stroke-kart.webp" loading="lazy" alt="923 号二冲卡丁车的车架和动力总成"></a><figcaption>923 号车</figcaption></figure><figure><a class="zoom" href="kart-telemetry.webp" data-caption="车载仪表 · 各圈时间及转速"><img src="kart-telemetry.webp" loading="lazy" alt="记录第九圈和第十圈圈速的仪表"></a><figcaption>逐圈记录</figcaption></figure><figure><a class="zoom" href="kart-best-lap.webp" data-caption="最佳圈速页 · 第九圈 52.95 秒"><img src="kart-best-lap.webp" loading="lazy" alt="仪表最佳圈速显示 52.95 秒"></a><figcaption>最快圈</figcaption></figure></div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap"><span>林泽洲 <i lang="en">Zezhou Lin</i></span><a href="https://github.com/sugarplum202066">GitHub <span aria-hidden="true">↗</span></a><a href="#top">回到顶部 ↑</a></footer>
+  <dialog aria-labelledby="lightbox-caption"><button class="close" type="button">关闭 <span aria-hidden="true">×</span></button><img id="lightbox-image" alt=""><p id="lightbox-caption"></p></dialog>
+</body>
+</html>

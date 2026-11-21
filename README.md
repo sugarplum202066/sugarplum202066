@@ -1,16 +1,31 @@
-## Hi there 👋
+[![林泽洲 Zezhou Lin，电子科技大学格拉斯哥学院，二维材料光电器件与嵌入式系统](https://raw.githubusercontent.com/sugarplum202066/sugarplum202066/main/profile-cover.jpg)](https://sugarplum202066.github.io/sugarplum202066/)
 
-<!--
-**sugarplum202066/sugarplum202066** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**[图文作品集 ↗](https://sugarplum202066.github.io/sugarplum202066/)**　·　[科研与工程](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md)　·　[教育与荣誉](https://github.com/sugarplum202066/sugarplum202066/blob/main/academic.md)　·　[赛道相册](https://github.com/sugarplum202066/sugarplum202066/blob/main/motorsport.md)
 
-Here are some ideas to get you started:
+我叫林泽洲，在电子科技大学格拉斯哥学院读微电子科学与工程。本科毕设里，我用激光照射 WS₂/MoS₂ 异质结，测量单个器件在不同偏压下产生的电流，研究能否从中辨别入射光的波长。为了让每条电流曲线都能追溯到当时的实验条件，我也为实验室写了一套仪器控制软件。
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+我已接受电子科技大学基础与前沿研究院**电子科学与技术专业硕士推免待录取通知**，预计 2027 年入学。本科前六学期 GPA **3.8/4.0**，大三学年学业排名 **10/160**，推免综合排名 **14/161**。
+
+## 科研与工程
+
+[![三件实物作品：显微镜下的异质结、WS63E 跌倒检测终端、双 STM32 小车](https://raw.githubusercontent.com/sugarplum202066/sugarplum202066/main/selected-projects.jpg)](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md)
+
+| 作品 | 我做了什么 |
+| --- | --- |
+| [WS₂/MoS₂ 计算光谱仪](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#spectrometer) | 参与异质结转移、对准和器件表征，搭建可调波长测试光路。从 198 条实测 I–t 曲线中提取 508 个完整光脉冲，比较偏压、栅压与波长对光电流的影响。 |
+| [4200A-SCS 光响应自动测试系统](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#automation) | 独立开发 Python 工作台，联动 Keithley Clarius 与 NKT CONTROL。现场空载联调完成 8 组，含复位用时 16 分 30 秒，8 对 XLS/CSV 的 525 个原始数值逐项一致。 |
+| [WS63E 智慧养老监测系统](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#ws63e) | 担任三人团队队长，负责六轴 IMU 跌倒判别及主机、边缘端软件，通过 Wi-Fi UDP 上报告警。作品获 2025 年全国大学生嵌入式芯片与系统设计竞赛芯片应用赛道**全国总决赛二等奖**。 |
+| [TDPS 双 STM32 循迹避障小车](https://github.com/sugarplum202066/sugarplum202066/blob/main/research.md#tdps) | 在五人团队中主导八路灰度循迹与差速 PID 调试，解决直角转弯、连续半圆后的重新捕线问题，参与整车避障联调。 |
+
+**实验与开发工具**　二维材料干法转移、AFM 与拉曼表征、Keithley 4200 系列、Python、MATLAB、C、Linux、STM32、WS63E。
+
+本科期间，我连续两学年获得校级优秀学生奖学金二等奖和学院学业奖学金二等奖，也在朋辈帮学习辅导社参与组织专业课复习与保研分享。[查看课程成绩、奖学金与学生工作 →](https://github.com/sugarplum202066/sugarplum202066/blob/main/academic.md)
+
+## 赛道内外
+
+[![精英组季军奖杯、天府国际赛车节 P 房合影与发车区的 12 号赛车](https://raw.githubusercontent.com/sugarplum202066/sugarplum202066/main/track-gallery.jpg)](https://github.com/sugarplum202066/sugarplum202066/blob/main/motorsport.md)
+
+- **[270 cc 四小时耐力赛](https://github.com/sugarplum202066/sugarplum202066/blob/main/motorsport.md#endurance)**　2025 跨年夜，我和队友获得卡丁车四小时耐力赛精英组季军。
+- **[模拟赛车](https://github.com/sugarplum202066/sugarplum202066/blob/main/motorsport.md#sim-racing)**　在电子科技大学第一届模拟赛车比赛中，以 Sugarplum 参赛，获全场第三、手柄组第一。
+- **[天府国际赛车节](https://github.com/sugarplum202066/sugarplum202066/blob/main/motorsport.md#tianfu)**　从 P 房合影到发车格，记录车队在开赛前的准备。
+- **[二冲竞技卡丁车](https://github.com/sugarplum202066/sugarplum202066/blob/main/motorsport.md#two-stroke)**　923 号车的一次练习中，第 9 圈跑出本场最佳 52.95 秒。相册里保留了整车和车载计时器照片。
